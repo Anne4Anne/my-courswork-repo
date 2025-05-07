@@ -2,7 +2,7 @@
 public class PartTimeStaffHire extends StaffHire
 {
     
-//Fields
+//Atributes
 private int workingHour;
 private double wagesPerHour;
 private String shifts;
@@ -23,9 +23,26 @@ public PartTimeStaffHire (int vacancyNumber,String designation,
    this.shifts = shifts;
    this.terminated = false; }
 }
+//Get and Set
+public int getWorkingHour(int workingHour){
+     return workingHour;
+    }  
+public void setWorkingHour(int workingHour){
+      workingHour = workingHour;
+  }  
+public int getWagesPerHour(int wagesPerHour){
+     return wagesPerHour;
+    }  
+public void setWagesPerHour(int wagesPerHour){
+      wagesPerHour = wagesPerHour;
+  }    
+public String getShifts(String shifts){
+     return shifts;
+    }
 public void setShifts(String shifts){
       this.shifts = shifts;
   }
+
 public void terminate() {
     if (!terminated) {  
     this.terminated = true;

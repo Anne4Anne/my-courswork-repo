@@ -1,6 +1,6 @@
 public class FullTimeStaffHire extends StaffHire 
 {
-//Fields
+//Attributes
 private double salary;
 private int weeklyFractionalHours;
 
@@ -17,9 +17,19 @@ public FullTimeStaffHire (int vacancyNumber,String designation,String jobType,
      this.salary = salary;
      this.weeklyFractionalHours = weeklyFractionalHours;
   }
+  //Get and set
+  public double getSalary(double salary){
+     return salary;
+    }
   public void setSalary(double salary){
-      this.salary = salary;
-  }
+     salary = salary;
+    }
+  public int getWeeklyFractionalHours(int weeklyFractionalHours){
+     return weeklyFractionalHours;
+    }
+  public void setWeeklyFractionalHours(int weeklyFractionalHours){
+     weeklyFractionalHours = weeklyFractionalHours;
+    }
   @Override
   public void display() {
       super.display();

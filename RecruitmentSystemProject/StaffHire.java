@@ -1,6 +1,6 @@
 public class StaffHire
 {
-    // Fields
+    // Atributes
     private int vacancyNumber;
     private String designation;
     private String jobType;
